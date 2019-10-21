@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="stylesheet" href="../reset.css" />
+        <link rel="stylesheet" href="./index.css" />
+        <title>code demo</title>
+    </head>
+
+    <body>
+        <noscript>
+            You need to enable JavaScript to run this app.
+        </noscript>
+        <div class="main">
+            <div class="box">
+                <h3>border-image 实现渐变</h3>
+                <div class="container container-1"></div>
+            </div>
+
+            <div class="box">
+                <h3>如果 border 用了 border-image，用 border-radius 圆角就会失效</h3>
+                <div class="container container-2"></div>
+            </div>
+
+            <div class="box">
+                <h3>方案1：可以通过伪元素解决失效问题</h3>
+                <div class="container container-3"></div>
+            </div>
+
+            <div class="box">
+                <h3>方案2：可以通过包裹一个父元素解决失效问题</h3>
+                <div class="container container-4">
+                    <div class="container-4-child"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

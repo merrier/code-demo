@@ -1,0 +1,64 @@
+.main {
+    padding: 20px;
+    margin: 0 auto;
+}
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.box {
+    padding: 10px 0;
+    border-bottom: 1px dashed #ccc;
+}
+.container{
+    display: inline-block;
+    width: 162px;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+.container-1{
+    border-image-source: linear-gradient(to top, red, orange, yellow);
+    border-style: solid;
+    border-width: 5px;
+    border-image-slice: 1;
+}
+
+.container-2{
+    border-image-source: linear-gradient(to top, red, orange, yellow);
+    border-style: solid;
+    border-width: 5px;
+    border-image-slice: 1;
+    border-radius: 20px;
+}
+
+.container-3{
+    position: relative;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.container-3:after{
+    content: "";
+	display: block;
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	bottom: -5px;
+	left: -5px;
+	border-radius: 20px;
+	background: linear-gradient(to top, red, orange, yellow);
+	z-index: -1;
+}
+
+.container-4 {
+    background-image: linear-gradient(to top, red, orange, yellow);
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.container-4-child{
+    background: #fff;
+    border-radius: 20px;
+    height: 100%;
+}
