@@ -1,0 +1,23 @@
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.box {
+    padding: 10px 0;
+    border-bottom: 1px dashed #ccc;
+}
+
+.father {
+    width: 200px; height: 400px; border: 1px solid red; overflow: auto;
+}
+.child {
+    background: #ccc;
+}
+.child div {
+    width: 400px; height: 900px;
+}
+
+
+.container-2 .child {
+    min-width: 100%; display: inline-block;
+}

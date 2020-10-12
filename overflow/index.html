@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="stylesheet" href="../reset.css" />
+        <link rel="stylesheet" href="./index.css" />
+        <title>父元素随子元素宽度自动撑开问题</title>
+    </head>
+
+    <body>
+        <noscript>
+            You need to enable JavaScript to run this app.
+        </noscript>
+        <h2>父元素随子元素宽度自动撑开问题, 父元素overflow: auto; 有滚动条时</h2>
+        <div class="box">
+            <h3>父子元素分别设置宽度</h3>
+            <div class="container container-1">
+                <pre>
+                    .father {
+                        width: 200px; height: 400px; border: 1px solid red; overflow: auto;
+                    }
+                    .child {
+                        background: #ccc;
+                    }
+                    .child div {
+                        width: 400px; height: 900px;
+                    }
+                </pre>
+                <div class="father">
+                    <div class="child">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>添加 min-width 和 display:inline-block 之后：</h3>
+            <div class="container container-2">
+                <pre>
+                    .container-2 .child {
+                        min-width: 100%; display: inline-block;
+                    }
+                </pre>
+                <div class="father">
+                    <div class="child">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
